@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<meta name="title" content="LuckyGroup">
+	<meta name="description" content="Форма заказа">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- модалка при отправки письма -->
+	<div class="overlay">
+		<div class="modal" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__title">Спасибо!</div>
+			<div class="modal__subtitle">Мы свяжемся с Вами в ближайшее время.</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="left">
+			<a href="#" class="left__title">Reduslim</a>
+			<div class="left__img">
+				<picture>
+					<source media="(max-width: 576px)" srcset="img/Reduslimmin.png">
+					<img src="img/Reduslim.png" alt="Препарат">
+				</picture>
+
+			</div>
+			<a href="#" class="left__subtitle">ECO</a>
+		</div>
+
+		<div class="right">
+
+			<h1 class="right__title">Сделай шаг к <br> выздоровлению</h1>
+			<form class="form" action="#" id="form">
+				<div class="contacts__name">
+					<label class="label_basic" for="name">ВАШЕ <span>ИМЯ</span></label>
+					<input name="name" id="name" type="text" placeholder="Алексей">
+				</div>
+				<div class="form__footer">
+					<button class="button">Заказать<span><img class="button__img" src="img/arrow.svg" alt="arrow"></span></button>
+					<div class="policy">
+						<a href="#" class="policy__trusted">Trusted</a>
+						<img src="img/lock.svg" alt="Картинка" class="policy__image">
+						<a href="#" class="policy__secure">Secure</a>
+					</div>
+				</div>
+				<div class="contacts__phone">
+					<label class="label_basic" for="name">ВАШ <span>ТЕЛЕФОН</span></label>
+					<div class="wrapper">
+						<input name="phone" placeholder="+7 (123) 456 78-90">
+						<span class="flag">
+							<select class="selectpicker" data-width="fit">
+								<option data-content='RU <span class="flag-icon flag-icon-ru"></span>'></option>
+								<option data-content='EN <span class="flag-icon flag-icon-us"></span>'></option>
+								<option data-content='FR <span class="flag-icon flag-icon-fr"></span>'></option>
+								<option data-content='DE <span class="flag-icon flag-icon-de"></span>'></option>
+								<option data-content='ES <span class="flag-icon flag-icon-es"></span>'></option>
+						</span>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>`
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+
+		<script src="js/script.js"></script>
+</body>
+
+</html>
