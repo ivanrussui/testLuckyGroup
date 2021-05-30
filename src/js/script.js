@@ -26,6 +26,9 @@ $(document).ready(function () {
 
   validateForms('#form');
 
+	  // Masked Input
+		$('input[name=phone').mask('+7 (999) 999-9999');
+
   // Ajax
   $('form').submit(function (e) {
     e.preventDefault();
@@ -48,13 +51,6 @@ $(document).ready(function () {
     });
     return false;
   });
-
-  // modal при отправки письма
-
-  // $('.contacts__btn').on('click', function () {
-  //   $('.overlay, #thanks').slideDown('slow');
-  // });
-  // этот скрипт не нужен так как он срабатывая игнорирует валидацию
 
   $('.modal__close').on('click', function () {
     $('.overlay, #thanks').slideUp(500);
